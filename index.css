@@ -33,6 +33,12 @@ a {
   font-size: 1.2em;
   display: flex;
   gap: 20px;
+  span {
+    cursor: pointer;
+  }
+  span:hover {
+    color: rgb(112, 187, 0);
+  }
 }
 .cart {
   height: 30px;
