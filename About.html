@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="about.css" />
   </head>
   <body>
     <header style="overflow: hidden">
@@ -64,7 +65,162 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section-of-intro>
+        <div class="heading">
+          <h1>About Us</h1>
+        </div>
+        <div class="leaf1" style="text-align: center">
+          <img src="img&more/basil-leaf.png" alt="" />
+        </div>
+        <div class="intro-page">
+          <div class="detail box-size">
+            <div class="heading"><h1>We Are Your Favorite Store</h1></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+              adipisci ipsa. Doloreimos inventore non distinctio maiores aut
+              labore libero provident cumque in nisi illo iste necessitatibus
+              modi, aliquam molestias adipisci perspiciatis quis natus dolor
+              tempore asperiores sequi! Ad dignissimos expedita
+            </p>
+          </div>
+          <div class="image box-size"></div>
+        </div>
+      </section-of-intro>
+      <section-of-auto-number>
+        <div class="number-container">
+          <span class="num-el">Number speaks for <br />themselves!</span>
+          <span class="num-el">
+            <p id="num-size">
+              100<i
+                class="fa fa-plus"
+                style="font-family: 'Times New Roman', Times, serif"></i>
+            </p>
+            <p>Curated Products</p>
+          </span>
+          <span class="num-el"
+            ><p id="num-size">
+              100<i
+                class="fa fa-plus"
+                style="font-family: 'Times New Roman', Times, serif"></i>
+            </p>
+            <p>Curated Products</p></span
+          >
+          <span class="num-el"
+            ><p id="num-size">
+              100<i
+                class="fa fa-plus"
+                style="font-family: 'Times New Roman', Times, serif"></i>
+            </p>
+            <p>Product Catageries</p></span
+          >
+        </div> </section-of-auto-number
+      ><br />
+      <section-of-certification>
+        <div class="cert-cont">
+          <div class="sliderpart box-size">
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide image01"></div>
+                <div class="slide image02"></div>
+                <div class="slide image03"></div>
+                <div class="slide image04"></div>
+              </div>
+            </div>
+            <div
+              class="data"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 20px;
+              ">
+              <div class="stars" style="color: rgb(0, 173, 9)">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo a modi saepe adipisci laboriosam illo, voluptatum
+                quasi, voluptate laudantium?
+              </p>
+              <div
+                class="customer"
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: start;
+                ">
+                <div class="circle-image">
+                  <div class="cust-img-1 image-prop"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="certificate-part box-size">
+            <div class="certificate">
+              <div class="cert-logo">
+                <img src="img&more/organic-badge-freeimg.png" alt="" />
+              </div>
+              <div class="cert-data">
+                <h1>Certified Products</h1>
+                <p>Lorem ipsum dolor sit amet fjs l jdsj possimus quaerat.</p>
+              </div>
+            </div>
+            <div class="heading">
+              <h1 id="head">We deal with various organic products</h1>
+            </div>
+            <div class="leaf0">
+              <img src="img&more/logo-leaf-new.png" alt="" />
+            </div>
+            <div class="lists">
+              <ul
+                style="
+                  list-style: none;
+                  column-count: 2;
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                ">
+                <li><i class="fa-regular fa-circle-check"></i> Fresh Fruits</li>
+                <li><i class="fa-regular fa-circle-check"></i> Dry Fruits</li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i> Fresh Vegetables
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i> Sale products
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i> Dried vegetables
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i> Dried vegetables
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i> Beauty products
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i> Milk products
+                </li>
+                <li>
+                  <i class="fa-regular fa-circle-check"></i> Organic honey
+                </li>
+                <li><i class="fa-regular fa-circle-check"></i> Organic tea</li>
+              </ul>
+            </div>
+            <button id="shop-now">
+              <i
+                class="fa-solid fa-cart-shopping"
+                style="color: rgb(255, 255, 255)"></i>
+              Shop Now
+            </button>
+          </div>
+        </div>
+      </section-of-certification>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="f-container-01">
@@ -155,6 +311,22 @@
         </div>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const totalSlides = slides.length;
+
+      function showSlide(index) {
+        const slider = document.querySelector(".slider");
+        slider.style.transform = `translateX(${-index * 100}%)`;
+      }
+
+      function autoSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        showSlide(currentIndex);
+      }
+
+      setInterval(autoSlide, 3000); // Change slide every 3 seconds
+    </script>
   </body>
 </html>

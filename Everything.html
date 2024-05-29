@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="everything.css" />
   </head>
   <body>
     <header style="overflow: hidden">
@@ -64,7 +65,54 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <container-section-of-products>
+        <div class="shop-container">
+          <!-- left box -->
+          <div class="left-box-container">
+            <div class="search-cont">
+              <input
+                type="search"
+                name="search"
+                class="search"
+                placeholder="Search Product Here..." />
+              <i class="fa fa-angle-right search-btn"></i>
+            </div>
+            <div class="range-cont">
+              <h1>Filter By Price</h1>
+              <input
+                id="myRange"
+                class="slider"
+                value="50"
+                max="100"
+                min="0"
+                type="range" />
+              <div class="renge-val">
+                <span
+                  >299
+                  <i
+                    class="fa fa-indian-rupee"
+                    style="color: rgb(6, 120, 6)"></i
+                ></span>
+                <span
+                  >799
+                  <i
+                    class="fa fa-indian-rupee"
+                    style="color: rgb(6, 120, 6)"></i
+                ></span>
+              </div>
+            </div>
+            <div class="some-products" style="font-size: 1.2em">
+              <a href=""><span>Groceries (10)</span></a>
+              <a href=""><span>Juice (9)</span></a>
+            </div>
+            <div class="product-cont"></div>
+          </div>
+          <!-- right box -->
+          <div class="right-box-container">box2</div>
+        </div>
+      </container-section-of-products>
+    </main>
     <footer>
       <div class="footer-container">
         <div class="f-container-01">

@@ -418,6 +418,20 @@ a {
 }
 /* end footer */
 /* responsive part */
+@media (max-height: 700px) {
+  .entry-page {
+    width: 100%;
+    height: auto;
+  }
+  .best-sellingProducts {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .review-container {
+    height: auto;
+  }
+}
 @media (max-width: 740px) {
   .option {
     display: none;
@@ -487,7 +501,4 @@ a {
       width: 100%;
     }
   }
-  /* .f-container-02 {
-    column-count: 1;
-  } */
 }
