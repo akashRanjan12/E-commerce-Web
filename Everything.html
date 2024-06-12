@@ -106,10 +106,140 @@
               <a href=""><span>Groceries (10)</span></a>
               <a href=""><span>Juice (9)</span></a>
             </div>
-            <div class="product-cont"></div>
+            <div class="product-cont">
+              <div class="image-of-best-selling">
+                <a href=""
+                  ><img
+                    src="img&more/sanitizer-400x400.jpg"
+                    alt=""
+                    height="270px"
+                /></a>
+                <span>data</span>
+              </div>
+              <div class="image-of-best-selling">
+                <a href=""
+                  ><img
+                    src="img&more/coffee-asorted-300x300.jpg"
+                    alt=""
+                    height="270px"
+                /></a>
+                <span>data</span>
+              </div>
+              <div class="image-of-best-selling">
+                <a href=""
+                  ><img
+                    src="img&more/edible-oil-300x300.jpg"
+                    alt=""
+                    height="270px"
+                /></a>
+                <span>data</span>
+              </div>
+            </div>
           </div>
           <!-- right box -->
-          <div class="right-box-container">box2</div>
+          <div class="right-box-container">
+            <div class="head-of-right">
+              <div class="home-shop">
+                <span> <a href="index.html">Home</a> / Shop </span>
+              </div>
+              <div class="heading01">Shop</div>
+            </div>
+            <div class="two-divisions">
+              <div class="product-box-container first-div">
+                <div class="prod-box-01 product-box">
+                  <img
+                    src="img&more/coffee-asorted-300x300.jpg"
+                    alt=""
+                    height="280px" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-02 product-box">
+                  <img
+                    src="img&more/cashew-butter-500-400x400.jpg"
+                    height="280px"
+                    alt="" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-03 product-box">
+                  <img
+                    src="img&more/diabetic-cookies-400x400.jpg"
+                    height="280px"
+                    alt="" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-04 product-box">
+                  <img
+                    src="img&more/edible-oil-300x300.jpg"
+                    height="280px"
+                    alt="" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-05 product-box">
+                  <img src="img&more/eggs-400x400.jpg" height="280px" alt="" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-06 product-box">
+                  <img
+                    src="img&more/face-wash-400x400.jpg"
+                    height="280px"
+                    alt="" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-07 product-box">
+                  <img
+                    src="img&more/red-chillies-300x300.jpg"
+                    height="280px"
+                    alt="" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-08 product-box">
+                  <img src="img&more/wheat-400x400.jpg" height="280px" alt="" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-09 product-box">
+                  <img
+                    src="img&more/sanitizer-400x400.jpg"
+                    height="280px"
+                    alt="" />
+                  <div class="data">data</div>
+                </div>
+              </div>
+              <div class="product-box-container second-div">
+                <div class="prod-box-01 product-box">
+                  <img
+                    src="img&more/orage-juice-kariz-300x300.jpg"
+                    alt=""
+                    height="280px" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-02 product-box">
+                  <img
+                    src="img&more/pulses-400x400.jpg"
+                    height="280px"
+                    alt="" />
+                  <div class="data">data</div>
+                </div>
+                <div class="prod-box-03 product-box">
+                  <img
+                    src="img&more/organic-honey-400x400.jpg"
+                    height="280px"
+                    alt="" />
+                  <div class="data">data</div>
+                </div>
+              </div>
+              <div
+                class="div-btn"
+                style="
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                  padding-left: 20px;
+                ">
+                <button id="one">1</button>
+                <button id="two">2</button>
+                <button id="next">NEXT</button>
+              </div>
+            </div>
+          </div>
         </div>
       </container-section-of-products>
     </main>
@@ -204,5 +334,35 @@
       </div>
     </footer>
     <script src="index.js"></script>
+    <script>
+      var firstdivEl = document.querySelector(".first-div");
+      var secdivEl = document.querySelector(".second-div");
+
+      var firstBtn = document.getElementById("one");
+      var secBtn = document.getElementById("two");
+      var nextBtn = document.querySelector("#next");
+
+      firstBtn.addEventListener("click", () => {
+        var val = true;
+        if (val === true) {
+          firstdivEl.style.display = "flex";
+          secdivEl.style.display = "none";
+        }
+      });
+      secBtn.addEventListener("click", () => {
+        var val = true;
+        if (val === true) {
+          firstdivEl.style.display = "none";
+          secdivEl.style.display = "flex";
+        }
+      });
+      nextBtn.addEventListener("click", () => {
+        var val = true;
+        if (val === true) {
+          firstdivEl.style.display = "none";
+          secdivEl.style.display = "flex";
+        }
+      });
+    </script>
   </body>
 </html>
